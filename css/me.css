@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    font-weight: 200;
+    margin-top: 50px;
+    color: white;
+}
+
+#section-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--dark_blue);
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#completion-box {
+    font-family: 'PT Mono';
+    font-weight: 900;
+}
+
+#completion-box:empty:before {
+  content: "\200b"; // unicode zero width space character
+}
