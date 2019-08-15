@@ -6,17 +6,38 @@ h1 {
 }
 
 #section-title {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
     background-color: var(--dark_blue);
-    height: 30vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 15px;
     box-sizing: border-box;
+    z-index: 5;
+}
+
+#section-title #title-animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+#profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    border: 10px solid var(--black);
 }
 
 #completion-box {
@@ -26,4 +47,184 @@ h1 {
 
 #completion-box:empty:before {
   content: "\200b"; // unicode zero width space character
+}
+
+#section-bio {
+    display: flex;
+    align-items: center;
+    padding-top: 10vh;
+}
+
+#section-bio #bio-text {
+    width: 100%;
+    padding: var(--padding);
+    font-size: .8em;
+    box-sizing: border-box;
+    font-weight: 200;
+}
+
+#section-bio #bio-terminal {
+    width: 100%;
+}
+
+.terminal {
+    width: 80%;
+    height: 300px;
+    background-color: var(--black);
+    border-radius: 10px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    transition: all .3s ease;
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.45), 0 10px 7px rgba(0, 0, 0, 0.33);
+}
+
+.terminal:hover {
+    box-shadow: 0 24px 44px rgba(0, 0, 0, 0.45), 0 20px 15px rgba(0, 0, 0, 0.33);
+    transform: translate(0, -10%);
+}
+
+.terminal-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.terminal-header span {
+    display: block;
+    color: white;
+    border-radius: 50%;
+    background-color: rgb(214, 52, 52);
+    width: 10px;
+    height: 10px;
+    margin: 3px;
+}
+
+.terminal-header > span:nth-of-type(1) {
+    background-color: rgb(214, 52, 52);
+}
+
+.terminal-header > span:nth-of-type(2) {
+    background-color: var(--grey);
+}
+
+.terminal-header > span:nth-of-type(3) {
+    background-color: var(--light_blue);
+}
+
+.terminal-text {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    height: 270px;
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+}
+.terminal-text::-webkit-scrollbar { width: 0 !important }
+
+.terminal-text p {
+    text-align: left;
+    margin: 0;
+    color: rgb(166, 166, 166);
+    font-family: 'PT Mono';
+    font-size: 13px;
+}
+
+.terminal-text-typing {
+    color: white;
+}
+
+#section-skills {
+    padding-top: 50px;
+    background-color: var(--grey);
+}
+
+#section-experience {
+    background-color: var(--dark_blue);
+    padding-top: 50px;
+    color: white;
+}
+
+#section-experience > h2 {
+    color: white;
+}
+
+#timeline {
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#timeline > .card > span {
+    flex-direction: column;
+    color: white;
+    font-size: .7em;
+}
+
+#timeline > .card {
+    background-color: white;
+    color: var(--black);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#timeline > .card:hover {
+    transform: translate(0);
+}
+
+#timeline > .card > h3 {
+    color: var(--black);
+}
+
+#timeline > .card > span > span {
+    display: block;
+    font-weight: 900;
+}
+
+#timeline > .card::after {
+    content: ' ';
+    border-left: 4px dashed var(--blue);
+    width: 10px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-2px, 100%);
+}
+
+#timeline > .card_first::after {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    #section-bio {
+        flex-direction: column;
+        padding-top: 13vh;
+    }
+    #section-bio #bio-text {
+        padding-bottom: 0px;
+    }
+    .terminal {
+        box-shadow: 0 24px 44px rgba(0, 0, 0, 0.45), 0 20px 15px rgba(0, 0, 0, 0.33);
+        transform: translate(0, -10%);
+    }
+    #profile-image {
+        width: 150px;
+        height: 150px;
+    }
 }

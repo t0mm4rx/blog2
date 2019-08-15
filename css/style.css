@@ -5,6 +5,7 @@
     --light_blue: #66FCF1;
     --blue: #45A29E;
     --radius: 30px;
+    --padding: 30px;
 }
 
 *:focus {
@@ -35,12 +36,13 @@ body, html {
     top: 0;
     left: 0;
     background-color: var(--grey);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
     z-index: 10;
     border: none;
+    overflow-y: auto;
     box-shadow: 0 24px 44px rgba(0, 0, 0, 0.60), 0 20px 15px rgba(0, 0, 0, 0.50);
 }
 
@@ -124,6 +126,17 @@ nav a:hover {
     color: var(--black);
 }
 
+section {
+    margin: 0;
+}
+
+section > h2 {
+    margin: auto;
+    text-align: center;
+    color: var(--dark_blue);
+    margin-bottom: 20px;
+}
+
 #menu-animation {
     position: absolute;
     left: 0;
@@ -174,4 +187,190 @@ nav a:hover {
     width: 100%;
     right: 0;
     border-bottom: 7px solid var(--blue);
+}
+
+.horizontal-cards {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    overflow-x: auto;
+    padding-left: 7.5px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}
+
+.vertical-cards {
+    display: grid;
+    width: 90%;
+    max-width: 90%;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px 2.5%;
+    margin: auto;
+}
+
+.card {
+    position: relative;
+    background-color: var(--dark_blue);
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    margin: 15px;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: var(--grey);
+    padding: 30px;
+    padding-top: 45px;
+    box-sizing: border-box;
+    transition: all .3s ease;
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.45), 0 10px 7px rgba(0, 0, 0, 0.33);
+    border-top: 5px solid var(--blue);
+}
+
+.card:hover {
+    transform: translate(0, -10%);
+    box-shadow: 0 24px 44px rgba(0, 0, 0, 0.45), 0 20px 15px rgba(0, 0, 0, 0.33);
+}
+
+.card > h3 {
+    color: white;
+    margin: 0;
+}
+.card > p {
+    margin: 0;
+    font-size: .7em;
+}
+
+.card > span {
+    position: absolute;
+    top: 0;
+    background-color: var(--blue);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card > span > i {
+    color: white;
+    font-size: 1.5em;
+}
+
+.card > .tags > span {
+    background-color: var(--black);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: .6em;
+    margin-right: 7px;
+}
+
+.card > .tags {
+    margin-bottom: 5px;
+}
+
+.card > .links {
+    margin-top: 5px;
+}
+
+.button {
+    position: relative;
+    color: var(--black);
+    font-weight: 900;
+    text-decoration: none;
+    border-bottom: 3px solid var(--light_blue);
+    z-index: 2;
+}
+
+.button::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: ' ';
+    background-color: var(--light_blue);
+    width: 100%;
+    height: 0%;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: -1;
+}
+
+.button:hover::before {
+    height: 100%;
+}
+
+.button-icon {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    transition: all .3s ease;
+}
+
+.button-icon:hover {
+    transform: scale(1.2);
+    color: var(--light_blue);
+}
+
+.button-icon > i {
+    font-size: 2.7em;
+}
+
+footer {
+    background-color: var(--black);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+    width: 100%;
+}
+
+#contact-link > a {
+    color: white;
+}
+
+#contact-link > a:hover {
+    color: var(--black);
+}
+
+#contact-wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-wrapper > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > span {
+    display: block;
+    color: white;
+    margin: auto;
+    font-size: .8em;
+    font-weight: 200;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .vertical-cards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+        align-items: center;
+        padding: 0px 20px 0px 20px;
+    }
+
+    #contact-wrapper {
+        flex-direction: column;
+    }
 }

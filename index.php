@@ -9,7 +9,7 @@ else if (strpos($_SERVER['SERVER_NAME'], '192.168.') !== false)
     $GLOBALS["url"] = 'http://' . $_SERVER['SERVER_NAME'] . 'blog2/';
 }
 else {
-    $GLOBALS["url"] = "https://tommarx.fr/";
+    $GLOBALS["url"] = "https://tommarx.fr/v2/";
 }
 if (!isset($_GET["page"]))
 {
@@ -54,6 +54,7 @@ $titles["sketches"] = "Collection d'expériences graphiques numériques de Tom M
         <meta name="viewport" content="width=device-width, user-scalable=no">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="<?php echo $GLOBALS["url"]; ?>favicon.png" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
         <link rel="stylesheet" href="<?php echo $GLOBALS["url"]; ?>css/style.css">
         <link rel="stylesheet" href="<?php echo $GLOBALS["url"]; ?>css/<?php echo $page; ?>.css">
@@ -65,8 +66,8 @@ $titles["sketches"] = "Collection d'expériences graphiques numériques de Tom M
         <canvas id="menu-animation"></canvas>
         <h2 id="main-title">Tom<br/>Marx<br/><span>><span id="blinking-thing">_</span></span></h2>
         <div id="content">
-
             <?php include_once($page . ".php"); ?>
+            <?php include_once("footer.php"); ?>
         </div>
     </body>
     <script src="<?php echo $GLOBALS["url"]; ?>js/nav.js"></script>
