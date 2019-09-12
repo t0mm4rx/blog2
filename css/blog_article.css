@@ -1,0 +1,14 @@
+#intro {
+    padding: 30px;
+    background-color: white;
+}
+
+#article-body {
+    min-width: 400px;
+    max-width: 600px;
+    margin: auto;
+}
+
+#article-body p {
+    text-align: justify;
+}

@@ -6,9 +6,8 @@ RewriteCond %{HTTP_HOST} !=localhost
 RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 RewriteRule ^$ index.php?page=me [QSA]
-RewriteRule cv/ index.php?page=cv [QSA]
 RewriteRule contact/ index.php?page=contact [QSA]
 RewriteRule sketches/ index.php?page=sketches [QSA]
-RewriteRule blog/ index.php?page=blog_home [QSA]
-RewriteRule ^categories/(.*)/$ index.php?page=blog_categories&categorie=$1 [QSA]
-RewriteRule ^article/(.*)/$ index.php?page=blog_post&post=$1 [L,QSA]
+RewriteRule ^blog/$ index.php?page=blog_home [QSA]
+RewriteRule ^blog/(.*)$ index.php?page=blog_article&post=$1 [QSA]
+RewriteRule ^categories/(.*)/$ index.php?page=blog_categories&categorie=$1 [L,QSA]

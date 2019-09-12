@@ -6,7 +6,10 @@
 
 <section id="section-bio">
     <div id="bio-text">
-        <p>Je suis né en 2001 à Lyon, où j'ai passé toute ma (courte) vie. Je me suis très tôt intéressé aux nouvelles technologies et plus particulièrement à l'informatique. J'ai commencé en primaire, par de simples programmes en VB.net, pour ensuite découvrir l'HTML. Ma passion me suivit au collège et lycée, et j'appris des langages plus complexes, le PHP et le Java. Aujourd'hui, je réalise des sites internets, des applications mobiles, ou différents programmes. Je m'intéresse beaucoup au webdesign, et j'aime créer des interfaces, des logos ou encore des infographies. Je fais également de la musique électro, et je pratique le basket depuis plus de 10 ans.
+        <p>Je suis né en 2001 à Lyon, où j'ai passé mon enfance. Je me suis très tôt intéressé aux nouvelles technologies et plus particulièrement à l'informatique. J'ai commencé en primaire, par de simples programmes en VB.net, pour ensuite découvrir l'HTML. Ma passion me suivit au collège et lycée, et j'appris des langages plus complexes, le PHP et le Java. Aujourd'hui, je réalise des sites internets, des applications mobiles, ou différents programmes. Je m'intéresse beaucoup au webdesign, et j'aime créer des interfaces, des logos ou encore des infographies.
+        Je suis également passionné par les données et leur traitement, principalement avec le Machine Learning ou la visualisation.
+        J'ai toujours beaucoup d'idées et j'essaye d'utiliser la programmation comme outil pour réaliser des choses créatives.
+        Je fais également de la musique électro, et je pratique le basket depuis plus de 10 ans.
         </p>
     </div>
     <div id="bio-terminal">
@@ -28,22 +31,22 @@
         <div class="card">
             <span><i class="fas fa-desktop"></i></span>
             <h3>Web</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eveniet quidem in non, dolorem corporis dolor, delectus, nobis animi voluptatum saepe sint eligendi, ullam. Error dignissimos voluptates obcaecati porro doloremque.</p>
+            <p>Je peux réaliser l'integralité d'un site Internet comme celui-ci : conception de la maquette, choix d'une charte graphique, intégration, déploiement. Je maîtrise les principales technologies backend et frontend : HTML, CSS, Javascript, PHP. Je peux utiliser des frameworks et des outils de dévelopemments comme SASS, Angular, Wordpress...</p>
         </div>
         <div class="card">
             <span><i class="fas fa-robot"></i></span>
             <h3>Intelligence artificielle</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eveniet quidem in non, dolorem corporis dolor, delectus, nobis animi voluptatum saepe sint eligendi, ullam. Error dignissimos voluptates obcaecati porro doloremque.</p>
-        </div>
-        <div class="card">
-            <span><i class="fas fa-pen-nib"></i></span>
-            <h3>Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eveniet quidem in non, dolorem corporis dolor, delectus, nobis animi voluptatum saepe sint eligendi, ullam. Error dignissimos voluptates obcaecati porro doloremque.</p>
+            <p>J'ai une vue d'ensemble de l'intelligence artificielle, et je peux résoudre des problèmes basiques en utilisant des méthodes de Machine Learning ou d'autres algorithmes. Je peux également analyser des ensembles de données en Python et les visualiser. Ce domaine me passionne et je me forme en continue.</p>
         </div>
         <div class="card">
             <span><i class="fas fa-mobile"></i></span>
             <h3>Mobile</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eveniet quidem in non, dolorem corporis dolor, delectus, nobis animi voluptatum saepe sint eligendi, ullam. Error dignissimos voluptates obcaecati porro doloremque.</p>
+            <p>Je sais développer des applications mobiles multi-plateformes avec le framwork Ionic et Cordova. Je connais également le processus de déploiement sur les deux principaux stores d'applications. Je peux également développer des applications Android natives.</p>
+        </div>
+        <div class="card">
+            <span><i class="fas fa-pen-nib"></i></span>
+            <h3>Design</h3>
+            <p>Je suis très intéressé par le design. J'aime créer des infographies avec Photoshop, des graphiques, des animations... Je peux également créer des maquettes web responsives comme celle de ce site. L'UX m'attire également, et j'aime penser le parcours utilisateur.</p>
         </div>
     </div>
 </section>

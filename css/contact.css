@@ -1,0 +1,109 @@
+#section-contact > h1 {
+    color: white;
+}
+
+#section-contact {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark_blue);
+    min-height: 80%;
+    padding-top: 25px;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#wrapper > div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:
+}
+
+#form-wrapper {
+    padding: 10%;
+    height: 100%;
+}
+
+#form-wrapper > .card {
+    background-color: var(--grey);
+}
+
+#form-wrapper > .card:hover {
+    transform: none;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#form > textarea {
+    height: 300px;
+}
+
+#form button {
+    color: white;
+    width: auto;
+    font-size: 1em;
+}
+#form button:hover {
+    color: var(--black);
+}
+
+#form-header {
+    display: flex;
+    width: 100%;
+}
+
+#form-header > input {
+    width: 100%;
+}
+
+#form-header > input:first-child {
+    margin-right: 10px;
+}
+
+.g-recaptcha {
+    margin: auto;
+    margin-top: 15px;
+}
+
+#button_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#contact-animation {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 700px) {
+    #animation {
+        display: none;
+    }
+    #form-header {
+        flex-direction: column;
+    }
+    #form-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #form-wrapper > form {
+        max-width: 95%;
+        margin: auto;
+    }
+}

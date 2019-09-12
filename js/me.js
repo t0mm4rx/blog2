@@ -1,10 +1,11 @@
-const TYPING_MIN = 60;
+const TYPING_MIN = 100;
 const TYPING_MAX = 250;
 
 const words = [
     "passionné",
     "créatif",
     "ambitieux",
+    "ingénieux",
     "moteur",
     "concepteur",
     "rigoureux",
@@ -60,21 +61,24 @@ next();
 
 
 var commands = [
-    "listknowledges",
-    "AI, Web, Photoshop, Sketch, MySQL",
-    "listexperience",
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "whoami",
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "whoami",
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "Je suis né à Lyon en 2001, j'ai toujours été passionné par les nouvelles technologies et l'informatique. Je suis aussi très curieux et j'adore apprendre donc je m'intéresse à beaucoup de choses. J'aime mélanger technique et art. Je suis étudiant à l'école 42 de Paris.",
+    "ps -A",
+    "En plus de l'informatique, je suis passionné par le basket. J'en pratique en compétition depuis plus de 10 ans. Je fais également de la musique électronique.",
+    "skill",
+    "Web, PHP, Python, Machine Learning, Java, C, Ionic, Jeux vidéos, Unity, LibGDX, p5.js, MySQL, Linux, Photoshop, Sketch, Adobe XD",
+    "ls * studies/",
+    "BAC mention bien<br />Diplôme MOOC AI Standford<br />*Student à 42 Paris<br />*MOOC deeplearning.ai<br /><br />*En cours"
+
 ];
-const WAIT_AFTER_COMMAND = 4000;
+const WAIT_AFTER_COMMAND = 5000;
 var terminal_triggered = false;
 
 function animate_terminal(id)
 {
-    animate_command(id, 0);
+    setTimeout(function () {
+        animate_command(id, 0);
+    }, 3000);
 }
 
 function animate_command(id, index)
@@ -87,10 +91,10 @@ function animate_command(id, index)
     p.append(new_line);
     document.getElementById(id).querySelector(".terminal-text").scrollTop = document.getElementById(id).querySelector(".terminal-text").scrollHeight;
     typing_animation(new_line, commands[index], () => {
-        let result = document.createElement("span");
+        let result = document.createElement("p");
         result.className = "terminal-text-command";
-        result.innerText += commands[index + 1];
-        result.innerText += "\n";
+        result.innerHTML += commands[index + 1];
+        result.innerHTML += "\n";
         document.getElementById(id).querySelector(".terminal-text > p").append(result);
         document.getElementById(id).querySelector(".terminal-text").scrollTop = document.getElementById(id).querySelector(".terminal-text").scrollHeight;
         setTimeout(() => {
@@ -108,7 +112,7 @@ function typing_animation(el, text, callback)
     {
         a += Math.floor(Math.random() * TYPING_MAX) + TYPING_MIN;
         setTimeout(() => {
-            el.innerText += text[i];
+            el.innerHTML += text[i];
         }, a);
     }
     setTimeout(callback, a);
@@ -116,7 +120,7 @@ function typing_animation(el, text, callback)
 
 document.querySelector("#content").addEventListener('scroll', function(e) {
     let scroll = document.querySelector("#content").scrollTop;
-    if (document.querySelector("#terminal").getBoundingClientRect().top + 100 < window.innerHeight && !terminal_triggered)
+    if (document.querySelector("#terminal").getBoundingClientRect().top + 400 < window.innerHeight && !terminal_triggered)
     {
         terminal_triggered = true;
         animate_terminal("terminal");

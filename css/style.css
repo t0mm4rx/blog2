@@ -137,6 +137,13 @@ section > h2 {
     margin-bottom: 20px;
 }
 
+section > h1 {
+    margin: 0;
+    text-align: center;
+    color: var(--dark_blue);
+    margin-bottom: 20px;
+}
+
 #menu-animation {
     position: absolute;
     left: 0;
@@ -239,7 +246,7 @@ section > h2 {
 }
 .card > p {
     margin: 0;
-    font-size: .7em;
+    font-size: .9em;
 }
 
 .card > span {
@@ -283,8 +290,26 @@ section > h2 {
     color: var(--black);
     font-weight: 900;
     text-decoration: none;
+    border: none;
     border-bottom: 3px solid var(--light_blue);
     z-index: 2;
+    background: none;
+}
+
+.button[disabled]
+{
+    border-bottom: 3px solid rgb(171, 64, 64);
+    cursor: not-allowed;
+}
+
+.button[disabled]:hover::before
+{
+    height: 0;
+}
+
+.button[disabled]:hover
+{
+    color: white !important;
 }
 
 .button::before {
@@ -350,6 +375,30 @@ footer {
     justify-content: center;
 }
 
+input[type="text"], input[type="email"], textarea {
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: all .3s ease;
+    border-top: 3px solid var(--blue);
+    box-sizing: border-box;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, textarea:hover {
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.25), 0 4px 3px rgba(0, 0, 0, 0.23);
+}
+
+button {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+    height: 100%;
+}
+
 footer > span {
     display: block;
     color: white;
@@ -358,6 +407,10 @@ footer > span {
     font-weight: 200;
     width: 100%;
     text-align: center;
+}
+
+.button > i {
+    margin-left: 10px;
 }
 
 @media (max-width: 700px) {
