@@ -16,7 +16,7 @@
     </li>
   </ul>
 <div class="full_width">
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/pi/target.png" rel="" />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/pi/target.png" rel="" />
 </div>
 <p>
   Ici, on a lancé 2 fléchettes, une dans la cible (la bleue), et une en dehors (la rouge).<br />

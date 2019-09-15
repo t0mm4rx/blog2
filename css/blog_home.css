@@ -1,17 +1,26 @@
 #section-intro {
-    padding: 30px;
-    background-color: white;
+    padding: 60px 30px 60px 30px;
+    background-color: var(--dark_blue);
+    color: white;
+}
+
+#section-intro > h1 {
+    color: white;
 }
 
 #posts-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 #posts-list > .card > span {
     flex-direction: column;
     color: white;
     font-size: .7em;
+    width: 80px;
+    height: 80px;
 }
 
 #posts-list > .card {
@@ -40,5 +49,12 @@
     #posts-list {
         display: grid;
         grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    #posts-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

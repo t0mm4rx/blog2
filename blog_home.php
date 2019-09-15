@@ -17,9 +17,9 @@ $posts = $blog->get_last_posts();
             echo '<span>' . $tag . '</span>';
         }?></div>
         <h3><?php echo $post->get_title(); ?></h3>
-        <p>Réalisation d'un site web style "AirBnB" listant les locations pour une ville et les affichant sur une carte.</p>
+        <p><?php echo $post->get_preview(); ?></p>
         <div class="links">
-            <a href="<?php echo $GLOBALS['url']; ?>blog/<?php echo $post->get_link(); ?>/" target="_blank" class="button">Lire<i class="fas fa-arrow-right"></i></a>
+            <a href="<?php echo $GLOBALS['url']; ?>blog/<?php echo $post->get_link(); ?>/" class="button">Lire<i class="fas fa-arrow-right"></i></a>
         </div>
     </div>
 <?php } ?>

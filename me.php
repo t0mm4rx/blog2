@@ -41,7 +41,7 @@
         <div class="card">
             <span><i class="fas fa-mobile"></i></span>
             <h3>Mobile</h3>
-            <p>Je sais développer des applications mobiles multi-plateformes avec le framwork Ionic et Cordova. Je connais également le processus de déploiement sur les deux principaux stores d'applications. Je peux également développer des applications Android natives.</p>
+            <p>Je sais développer des applications mobiles multi-plateformes avec le framework Ionic et Cordova. Je connais également le processus de déploiement sur les deux principaux stores d'applications. Je peux également développer des applications Android natives.</p>
         </div>
         <div class="card">
             <span><i class="fas fa-pen-nib"></i></span>

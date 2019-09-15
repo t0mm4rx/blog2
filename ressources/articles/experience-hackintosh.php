@@ -134,7 +134,7 @@
 </div>
 <br />
 <div class="full_width">
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/experience-hackintosh/imac.png" alt="Prix iMac 27 pouces avec une configuration semblable"/>
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/experience-hackintosh/imac.png" alt="Prix iMac 27 pouces avec une configuration semblable"/>
 </div>
 <p>
   <b>Il y a plus de 1000€ de différence</b> pour des composants similaires, une meilleur carte graphique, un disque dur en plus, mais deux écrans Full HD au lieu d'un écran 4k. Il est donc beaucoup plus intéressant financièrement de monter un Hackintosh.

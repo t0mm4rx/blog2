@@ -29,6 +29,7 @@ body, html {
     background-color: var(--black);
     overflow: hidden;
     font-family: 'Montserrat';
+    overflow-x: hidden;
 }
 
 #content {
@@ -43,6 +44,7 @@ body, html {
     z-index: 10;
     border: none;
     overflow-y: auto;
+    overflow-x: hidden;
     box-shadow: 0 24px 44px rgba(0, 0, 0, 0.60), 0 20px 15px rgba(0, 0, 0, 0.50);
 }
 
@@ -222,7 +224,6 @@ section > h1 {
     background-color: var(--dark_blue);
     width: 100%;
     min-width: 100%;
-    height: 100%;
     margin: 15px;
     border-radius: 10px;
     margin-top: 30px;

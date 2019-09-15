@@ -56,11 +56,11 @@ J'ai utilisé l'excellente librairie javascript <a target="_blank" href="https:/
 <p>Quelques exemples obtenus.</p>
 
 <div class="full_width">
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/art-procedural/1opt.gif" alt="Exemple n°1 d'animation générée aléatoirement">
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/art-procedural/5opt.gif" alt="Exemple n°2 d'animation générée aléatoirement">
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/art-procedural/2opt.gif" alt="Exemple n°3 d'animation générée aléatoirement">
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/art-procedural/6opt.gif" alt="Exemple n°4 d'animation générée aléatoirement">
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/art-procedural/4opt.gif" alt="Exemple n°5 d'animation générée aléatoirement">
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/art-procedural/1opt.gif" alt="Exemple n°1 d'animation générée aléatoirement">
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/art-procedural/5opt.gif" alt="Exemple n°2 d'animation générée aléatoirement">
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/art-procedural/2opt.gif" alt="Exemple n°3 d'animation générée aléatoirement">
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/art-procedural/6opt.gif" alt="Exemple n°4 d'animation générée aléatoirement">
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/art-procedural/4opt.gif" alt="Exemple n°5 d'animation générée aléatoirement">
 </div>
 <div class="full_width">
   <a class="button" href="<?php echo $GLOBALS['url']; ?>art/" target="_blank">Lien vers le générateur<i class="fas fa-external-link-alt"></i></a>

@@ -4,7 +4,7 @@ class Post
 {
     private $title;
     private $text_preview; // Text shown in post listings, 200 chars max
-    private $link; // /article/:link/
+    private $link; // /blog/:link/
     private $tags = [];
     private $date; // DD/MM/YYYY
     private $time; // Time to read, minutes
@@ -35,12 +35,12 @@ class Post
 
     public function get_content()
     {
-        return 'content/articles/' . $this->link . '.php';
+        return 'ressources/articles/' . $this->link . '.php';
     }
 
     public function get_url()
     {
-        return $GLOBALS['url'] . 'article/' . $this->link . '/';
+        return $GLOBALS['url'] . 'blog/' . $this->link . '/';
     }
 
     public function get_link()

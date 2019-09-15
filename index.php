@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 $GLOBALS["months"] = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Novembre", "Octobre", "Décembre"];
 include_once("blog.php");
@@ -49,7 +52,8 @@ else {
 $titles = [];
 $titles["me"] = "Tom Marx, développeur IA, web, mobile freelance passionné";
 $titles["blog_home"] = "Blog de Tom Marx, développeur freelance";
-$titles["blog_article"] = $blog->get_post_by_link($article)->get_title() . " - Tom Marx";
+if($page == "blog_article")
+    $titles["blog_article"] = $blog->get_post_by_link($article)->get_title() . " - Tom Marx";
 $titles["contact"] = "Contacter Tom Marx";
 $titles["sketches"] = "Collection d'expériences graphiques numériques de Tom Marx";
 
@@ -60,7 +64,6 @@ $descriptions["contact"] = "Vous souhaitez me contacter ? Envoyez-moi un message
 $descriptions["sketches"] = "Le code est un outil qui peut être mis au service de l'ésthétique. Voici ma collection d'expériences créatives et techniques.";
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>

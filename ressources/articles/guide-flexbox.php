@@ -10,11 +10,11 @@
   Avec Flexbox, <b>le container va aligner tous les éléments dans une seule direction</b>, pour former une rangée ou une colonne selon l'orientation du container. L'orientation de Flexbox peut être contrôlée via la propriété '<b>flex-direction</b>'.
 </p>
 <div class="full_width">
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/guide-flexbox/container.png" alt="Un container flexbox horizontal" />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/guide-flexbox/container.png" alt="Un container flexbox horizontal" />
   <p class="image_caption">
     Ici le container est orienté horizontalement, grâce à la propriété 'flex-direction: row;'
   </p><br />
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/guide-flexbox/container_vertical.png" alt="Un container flexbox vertical" />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/guide-flexbox/container_vertical.png" alt="Un container flexbox vertical" />
   <p class="image_caption">
     Ici le container est orienté verticalement, grâce à la propriété 'flex-direction: column;'
   </p>
@@ -58,27 +58,27 @@
   Un container Flexbox permet d'aligner les éléments sur le plan horizontal et vertical de plusieurs manières différentes. Pour définir l'orientation horizontale, on utilise la propriété '<b>justify-content</b>' sur le container pour définir les marges et la position des enfants.
 </p>
 <div class="full_width">
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/guide-flexbox/center.png" alt="La propriété justify-content: center;" />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/guide-flexbox/center.png" alt="La propriété justify-content: center;" />
   <p class="image_caption">
     Au centre, avec justify-content: center;
   </p><br />
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/guide-flexbox/flex_start.png" alt="La propriété justify-content: center;" />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/guide-flexbox/flex_start.png" alt="La propriété justify-content: center;" />
   <p class="image_caption">
     Au début du container, avec justify-content: flex-start;
   </p><br />
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/guide-flexbox/flex_end.png" alt="La propriété justify-content: center;" />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/guide-flexbox/flex_end.png" alt="La propriété justify-content: center;" />
   <p class="image_caption">
     A la fin du container, avec justify-content: flex-end;
   </p><br />
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/guide-flexbox/space_between.png" alt="La propriété justify-content: center;" />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/guide-flexbox/space_between.png" alt="La propriété justify-content: center;" />
   <p class="image_caption">
     En maximisant les marges au centre, avec justify-content: space-between;
   </p><br />
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/guide-flexbox/space_around.png" alt="La propriété justify-content: center;" />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/guide-flexbox/space_around.png" alt="La propriété justify-content: center;" />
   <p class="image_caption">
     En maximisant les marges sur les côtés, avec justify-content: space-around;
   </p><br />
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/guide-flexbox/space_evenly.png" alt="La propriété justify-content: center;" />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/guide-flexbox/space_evenly.png" alt="La propriété justify-content: center;" />
   <p class="image_caption">
     En ayant des marges égales entre les bords et les éléments, avec justify-content: space-evenly;
   </p>
@@ -90,22 +90,22 @@
 </p>
 <div class="full_width">
 
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/guide-flexbox/vertical_center.png" alt="La propriété justify-content: center;" />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/guide-flexbox/vertical_center.png" alt="La propriété justify-content: center;" />
   <p class="image_caption">
     'align-items: center' centre les éléments
   </p><br/>
 
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/guide-flexbox/vertical_flex_start.png" alt="La propriété justify-content: center;" />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/guide-flexbox/vertical_flex_start.png" alt="La propriété justify-content: center;" />
   <p class="image_caption">
     'align-items: flex-start' colle les éléments en haut du container
   </p><br/>
 
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/guide-flexbox/vertical_flex_end.png" alt="La propriété justify-content: center;" />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/guide-flexbox/vertical_flex_end.png" alt="La propriété justify-content: center;" />
   <p class="image_caption">
     'align-items: flex-end' colle les éléments en bas du container
   </p><br/>
 
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/guide-flexbox/vertical_stretch.png" alt="La propriété justify-content: center;" />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/guide-flexbox/vertical_stretch.png" alt="La propriété justify-content: center;" />
   <p class="image_caption">
     'align-items: flex-stretch' aligne la hauteur des éléments sur la hauteur du plus grand élément
   </p><br/>
@@ -128,7 +128,7 @@
   order: 1;
 }</code></pre>
 <div class="full_width">
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/guide-flexbox/order.png" alt="La propriété order" />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/guide-flexbox/order.png" alt="La propriété order" />
 </div><br />
     </li>
     <li>
@@ -146,22 +146,22 @@
   align-self: baseline;
 }</code></pre>
 <div class="full_width">
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/guide-flexbox/align_self.png" alt="La propriété align-self" />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/guide-flexbox/align_self.png" alt="La propriété align-self" />
 </div><br />
 </li>
 <li>
   Enfin, la propriété '<b>flex</b>', qui permet de définir les espaces que prend chaque élément. Cette propriété prend 3 paramètres, les deux derniers sont optionnels.
   Le premier paramètre, c'est la capacité de l'élément à remplir l'espace libre. Si elle est à zéro, alors l'élément minimise sa taille, sinon, elle occupera la fraction de l'espace indiqué. Ci-dessous un exemple pour mieux comprendre :
   <div class="full_width">
-    <img src="<?php echo $GLOBALS['url']; ?>content/articles/guide-flexbox/flex_0.png" alt="Un container Flexbox avec ses éléments en flex: 0" />
+    <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/guide-flexbox/flex_0.png" alt="Un container Flexbox avec ses éléments en flex: 0" />
     <p class="image_caption">
       Ici tous les enfants ont la propriété '<b>flex: 0</b>', ils prennent tous la largeur minimum
     </p><br />
-    <img src="<?php echo $GLOBALS['url']; ?>content/articles/guide-flexbox/flex_1.png" alt="Un container Flexbox avec des éléments qui prennent différentes fraction de l'espace disponible" />
+    <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/guide-flexbox/flex_1.png" alt="Un container Flexbox avec des éléments qui prennent différentes fraction de l'espace disponible" />
     <p class="image_caption">
       Les deux premiers éléments ont la propriété '<b>flex: 1</b>', le dernier a la propriété '<b>flex: 2</b>'. Le dernier élément prend donc autant d'espace que les deux premiers
     </p><br />
-    <img src="<?php echo $GLOBALS['url']; ?>content/articles/guide-flexbox/flex_2.png" alt="Un container Flexbox avec des éléments qui prennent différentes fraction de l'espace disponible" />
+    <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/guide-flexbox/flex_2.png" alt="Un container Flexbox avec des éléments qui prennent différentes fraction de l'espace disponible" />
     <p class="image_caption">
       Le premier élément a la propriété '<b>flex: 3</b>', les deux autres ont '<b>flex: 1</b>'. Le premier élément prend alors 2/3 de l'espace disponible et les deux derniers se partagent l'espace restant
     </p><br />
@@ -188,7 +188,7 @@
   On peut s'amuser à découper des maquettes en différents containers Flexbox, comme avec ce blog :
 </p>
 <div class="full_width">
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/guide-flexbox/blog_header.png" alt="Le header du blog découpé en layouts Flexbox" />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/guide-flexbox/blog_header.png" alt="Le header du blog découpé en layouts Flexbox" />
 </div>
 <p>
   Le header peut facilement être recréé grâce à deux containers Flexbox. Les deux sont orientés horizontalement. Le premier, celui qui structure le header maximise les marges au centre, donc il possède la propriété '<b>justify-content: space-between</b>'. Tous deux centrent leurs éléments verticalement, ils ont donc la propriété '<b>align-items: center</b>'.
@@ -220,7 +220,7 @@
   }
 &lt;/style&gt;</code></pre>
 <div class="full_width">
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/guide-flexbox/blog_body.png" alt="Un article du blog découpé en layouts Flexbox" />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/guide-flexbox/blog_body.png" alt="Un article du blog découpé en layouts Flexbox" />
 </div>
 <p>
   Pour le corps du site, on voit que la page est découpée en deux, avec l'article qui prend environ 2/3 de la largeur, l'aside environ 1/3.

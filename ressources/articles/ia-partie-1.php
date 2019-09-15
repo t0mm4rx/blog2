@@ -46,7 +46,7 @@
   <li>La troisième entrée va avoir un poids très proche de zéro, car le fait de posséder une trotinette ne semble pas être corrélé avec le fait d'être malade. Cette entrée a donc une influence nulle sur le résultat.</li>
 </ul>
 <div class="full_width">
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/ia-partie-1/schema1.jpg" alt="Schéma du fonctionement d'un neurone"/>
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/ia-partie-1/schema1.jpg" alt="Schéma du fonctionement d'un neurone"/>
 </div>
 <p>
   Voyons maintenant comment en connaissant les poids et les entrées, le neurone calcule une sortie. C'est relativement simple, cela ce fait en deux étapes :
@@ -65,10 +65,10 @@
   `sig(x) = 1 / (1 + e^-x)`
   <br />
   Cette fonction ressemble à ça :
-  <div class="full_width">
-    <img src="<?php echo $GLOBALS['url']; ?>content/articles/ia-partie-1/sig.jpg" alt="Schéma du fonctionement d'un neurone"/>
-  </div>
 </ul>
+  <div class="full_width">
+    <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/ia-partie-1/sig.jpg" alt="Schéma du fonctionement d'un neurone"/>
+  </div>
 <p>
   Résumons tous les composants d'un neurone artificiel :
 </p>
@@ -112,7 +112,7 @@
   On peut résumer ce procédé avec ce schéma :
 </p>
 <div class="full_width">
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/ia-partie-1/schema2.jpg" alt="Schéma machine learning"/>
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/ia-partie-1/schema2.jpg" alt="Schéma machine learning"/>
 </div>
 <p>
     On voit ici que :

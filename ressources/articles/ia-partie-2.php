@@ -6,7 +6,7 @@
   Nous disposons du dataset suivante :
 </p>
 <div class="full_width">
-  <a href="<?php echo $GLOBALS['url']; ?>content/articles/ia-partie-2/dataset.json" class="button" target="_blank">Télécharger le dataset (.json) <i class="fas fa-download"></i></a>
+  <a href="<?php echo $GLOBALS['url']; ?>ressources/articles/ia-partie-2/dataset.json" class="button" target="_blank">Télécharger le dataset (.json) <i class="fas fa-download"></i></a>
 </div>
 <p>
   On défini le type 0 pour les pommes et 1 pour les citrons. Le dataset est composé de 100 examples de fruits.
@@ -188,19 +188,19 @@ Entrainement terminé
   Et voilà ! Notre neurone est capable de différencier parfaitement les deux fruits après 732 répétitions de l'entrainement. Si on lui demande de prédire la nature d'un fruit qui n'est pas dans le dataset, il y arrivera sans soucis. Ci-dessous le graphe de la progession du neurone :
 </p>
 <div class="full_width">
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/ia-partie-2/graph.png" alt="Progression de notre neurone" />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/ia-partie-2/graph.png" alt="Progression de notre neurone" />
 </div>
 <p>
   On voit que la courbe est loin d'être lisse, mais <b>globalement le réseau progresse</b>. Maintenant, nous allons reproduire l'expérience <b>sans le bias</b> :
 </p>
 <div class="full_width">
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/ia-partie-2/graph_bias.png" alt="Progression de notre neurone sans le bias" />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/ia-partie-2/graph_bias.png" alt="Progression de notre neurone sans le bias" />
 </div>
 <p>
   On voit que le neurone est incapable de descendre en dessous d'une erreur de 0,6. Le bias a donc bien une importance cruciale. Faisons un autre essai, cette fois-ci avec un <b>learning rate à 1</b> (ce qui équivaut à l'absence de celui-ci) :
 </p>
 <div class="full_width">
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/ia-partie-2/graph_lr.png" alt="Progression de notre neurone sans learning rate" />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/ia-partie-2/graph_lr.png" alt="Progression de notre neurone sans learning rate" />
 </div>
 <p>
   Là aussi, le neurone bloque aux alentours de 0,6. Ces deux valeurs sont donc indispensables pour un perceptron. Vous pouvez essayer de faire varier les différents paramètres de votre neurone pour en voir l'influence sur le résultat. Vous pouvez également essayer de donner un learning rate différent pour le bias, vous verrez que pour ce dataset en particulier, il est possible d'optimiser l'apprentissage.
@@ -213,13 +213,13 @@ Entrainement terminé
   si l'on représente nos fruits sur un plan avec deux axes, masse et diamètre, on est capable de tracer une droite qui sépare les deux fruits :<br />
 </p>
 <div class="full_width">
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/ia-partie-2/graph_dataset.png" alt="Représentation graphique du dataset" />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/ia-partie-2/graph_dataset.png" alt="Représentation graphique du dataset" />
 </div>
 <p>
   Le bias est lié à <b>l'ordonnée à l'origine de la droite</b>, les poids au coefficient diecteur. Un neurone seul sera incapable de classifier ce genre de dataset :
 </p>
 <div class="full_width">
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/ia-partie-2/graph_xor.png" alt="Progression de notre neurone sans learning rate" />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/ia-partie-2/graph_xor.png" alt="Progression de notre neurone sans learning rate" />
 </div>
 <p>
   Dans ce cas, il est impossible de séparer les classes avec une seule droite, il faudra donc plus d'un neurone.
@@ -231,6 +231,6 @@ Entrainement terminé
   Nous avons crée un neurone capable de s'entrainer à résoudre des problèmes très simples. L'entrainement permet de trouver les meilleurs poids, mais cela prend un certain nombre d'entrainements avant de pouvoir obtenir un résultat satisfaisant. Il est très important d'avoir un retour sur la progression de l'algorithme, en calculant l'erreur moyenne par exemple. Le fonctionnement d'un neurone peut être représenté graphiquement, par le fait de trouver une droite capable de séparer les différentes classes du dataset.
 </p>
 <div class="full_width">
-  <a href="<?php echo $GLOBALS['url']; ?>content/articles/ia-partie-2/dataset.json" class="button" target="_blank">Dataset (.json) <i class="fas fa-download"></i></a>
-  <a href="<?php echo $GLOBALS['url']; ?>content/articles/ia-partie-2/projet partie 2.zip" class="button" target="_blank">Projet (.zip) <i class="fas fa-download"></i></a>
+  <a href="<?php echo $GLOBALS['url']; ?>ressources/articles/ia-partie-2/dataset.json" class="button" target="_blank">Dataset (.json) <i class="fas fa-download"></i></a>
+  <a href="<?php echo $GLOBALS['url']; ?>ressources/articles/ia-partie-2/projet partie 2.zip" class="button" target="_blank">Projet (.zip) <i class="fas fa-download"></i></a>
 </div>

@@ -3,7 +3,7 @@
   L'objectif de ce projet était de créer une page web capable de <b>reconnaître le dessin de l'utilisateur et de l'associer avec un emoji</b>. La page comporte deux canvas, l'un pour entraîner le modèle en représentant l'emoji demandé, l'autre pour prédire l'emoji associé au dessin de l'utilisateur.
 </p>
 <div class="full_width">
-  <img src="<?php echo $GLOBALS['url']; ?>content/articles/emojis/canvas.png" alt="Les canvas de la page." />
+  <img src="<?php echo $GLOBALS['url']; ?>ressources/articles/emojis/canvas.png" alt="Les canvas de la page." />
 </div>
 <p>
   La partie graphique a été faite avec la librairie p5.js, la partie machine learning avec Tensorflow.js. Ce qui est intéressant, c'est que l'entrainement a lieu dans le navigateur, et utilise la puissance graphique de l'ordinateur client. Démo :
