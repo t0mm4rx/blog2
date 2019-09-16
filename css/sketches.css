@@ -1,0 +1,100 @@
+#intro {
+    padding: 30px;
+    background-color: white;
+    padding-top: 60px;
+}
+
+#section-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 30px;
+}
+
+#section-list > .card {
+    background-color: white;
+    color: var(--black);
+    box-sizing: border-box;
+    width: auto !important;
+    min-width: auto !important;
+    height: auto;
+}
+
+#section-list > .card:hover {
+    transform: translate(0);
+}
+
+#section-list > .card > h3 {
+    color: var(--black);
+}
+
+@media (max-width: 700px) {
+    #section-list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    #section-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+#modal {
+    position: fixed;
+    top: -60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 800px;
+    height: 800px;
+    z-index: 100;
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.45), 0 10px 7px rgba(0, 0, 0, 0.33);
+    transition: top .6s ease;
+}
+
+#modal.open {
+    top: 50%;
+}
+
+#modal > .button-icon {
+    color: var(--black);
+    background: none;
+    border: none;
+    position: fixed;
+    transform: translate(50%, -50%);
+}
+
+#modal > .button-icon:nth-child(1) {
+    right: 15px;
+    top: 15px;
+}
+
+#modal > .button-icon:nth-child(1) > i {
+    font-size: 3.5em;
+}
+
+#modal > .button-icon:nth-child(2) {
+    right: 60px;
+    top: 15px;
+}
+
+#modal > iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 800px) {
+    #modal {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #modal > iframe {
+        width: 100vw;
+        height: 100vh;
+    }
+}
