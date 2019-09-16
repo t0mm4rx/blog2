@@ -85,5 +85,5 @@ function random_point()
 }
 </code></pre>
 <div class="full_width">
-  <a href="https://tommarx.fr/pi/" target="_blank" class="button" rel="Approximer PI avec la méthode de Monte Carlo"><i class="fas fa-external-link-alt"></i>Démo</a>
+  <a href="https://tommarx.fr/pi/" target="_blank" class="button" rel="Approximer PI avec la méthode de Monte Carlo">Démo<i class="fas fa-external-link-alt"></i></a>
 </div>

@@ -9,7 +9,7 @@ Pour détecter si l’utilisateur passe sa main sur un pad, on va partir du prin
 Les pads peuvent être déplacés et leur taille peut être modifiée.
 </p>
 <div class="full_width">
-  <a class="button" href="<?php echo $GLOBALS['url']; ?>webcamdrumming" target="_blank"><i class="fas fa-drum"></i> Jouez !</a>
+  <a class="button" href="<?php echo $GLOBALS['url']; ?>webcamdrumming" target="_blank">Jouez !<i class="fas fa-drum"></i></a>
 </div>
 
 <h3>Récupération du flux vidéo de la webcam</h3>
@@ -331,5 +331,5 @@ function toggle_pad(pad)
   Le code complet :
 </p>
 <div class="full_width">
-  <a href="https://github.com/t0mm4rx/WebcamDrumming" target="_blank" class="button"><i class="fab fa-github"></i>Repo Github</a>
+  <a href="https://github.com/t0mm4rx/WebcamDrumming" target="_blank" class="button">Repo Github<i class="fab fa-github"></i></a>
 </div>
