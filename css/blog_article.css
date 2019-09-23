@@ -19,8 +19,9 @@
 
 @media (max-width: 750px) {
     #article-body {
-        width: 100%;
-        max-width: 100% !important;
+        width: 100vw;
+        max-width: 100vw !important;
+        min-width: auto;
         padding: 0;
         padding-bottom: 30px;
         margin: 0 !important;

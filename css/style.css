@@ -427,4 +427,15 @@ footer > span {
     #contact-wrapper {
         flex-direction: column;
     }
+
+    #disqus_thread {
+        box-sizing: border-box;
+        max-width: 90% !important;
+        margin: auto;
+    }
+}
+
+#disqus_thread {
+    margin-top: 50px;
+    box-sizing: border-box;
 }
