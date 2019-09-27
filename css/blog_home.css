@@ -1,13 +1,3 @@
-#section-intro {
-    padding: 60px 30px 60px 30px;
-    background-color: var(--dark_blue);
-    color: white;
-}
-
-#section-intro > h1 {
-    color: white;
-}
-
 #posts-list {
     display: grid;
     grid-template-columns: 1fr 1fr;

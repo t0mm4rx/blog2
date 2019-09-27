@@ -1,7 +1,7 @@
 <?php
 $posts = $blog->get_last_posts();
 ?>
-<section id="section-intro">
+<section class="section-intro-dark">
     <h1>Tom Marx - Blog</h1>
     <h3>Les derniers articles parus sur mon blog.</h3>
     <p>Je parle de programmation mise au service du créatif. Je présente aussi quelques sujets techniques. Vous y retrouverez des articles traitant du web, du python, d'IA ou encore de mes expérience de vie.</p>

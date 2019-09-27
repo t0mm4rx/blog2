@@ -1,9 +1,3 @@
-#intro {
-    padding: 30px;
-    background-color: white;
-    padding-top: 60px;
-}
-
 #section-list {
     display: grid;
     grid-template-columns: 1fr 1fr;

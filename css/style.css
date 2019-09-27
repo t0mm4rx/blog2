@@ -132,14 +132,14 @@ section {
     margin: 0;
 }
 
-section > h2 {
+section>h2 {
     margin: auto;
     text-align: center;
     color: var(--dark_blue);
     margin-bottom: 20px;
 }
 
-section > h1 {
+section>h1 {
     margin: 0;
     text-align: center;
     color: var(--dark_blue);
@@ -171,7 +171,7 @@ section > h1 {
     z-index: 1;
 }
 
-#main-title > span {
+#main-title>span {
     float: left;
 }
 
@@ -241,16 +241,17 @@ section > h1 {
     box-shadow: 0 24px 44px rgba(0, 0, 0, 0.45), 0 20px 15px rgba(0, 0, 0, 0.33);
 }
 
-.card > h3 {
+.card>h3 {
     color: white;
     margin: 0;
 }
-.card > p {
+
+.card>p {
     margin: 0;
     font-size: .9em;
 }
 
-.card > span {
+.card>span {
     position: absolute;
     top: 0;
     background-color: var(--blue);
@@ -264,12 +265,12 @@ section > h1 {
     justify-content: center;
 }
 
-.card > span > i {
+.card>span>i {
     color: white;
     font-size: 1.5em;
 }
 
-.card > .tags > span {
+.card>.tags>span {
     background-color: var(--black);
     color: white;
     padding: 5px;
@@ -278,11 +279,11 @@ section > h1 {
     margin-right: 7px;
 }
 
-.card > .tags {
+.card>.tags {
     margin-bottom: 5px;
 }
 
-.card > .links {
+.card>.links {
     margin-top: 5px;
 }
 
@@ -297,19 +298,16 @@ section > h1 {
     background: none;
 }
 
-.button[disabled]
-{
+.button[disabled] {
     border-bottom: 3px solid rgb(171, 64, 64);
     cursor: not-allowed;
 }
 
-.button[disabled]:hover::before
-{
+.button[disabled]:hover::before {
     height: 0;
 }
 
-.button[disabled]:hover
-{
+.button[disabled]:hover {
     color: white !important;
 }
 
@@ -342,7 +340,7 @@ section > h1 {
     color: var(--light_blue);
 }
 
-.button-icon > i {
+.button-icon>i {
     font-size: 2.7em;
 }
 
@@ -354,11 +352,11 @@ footer {
     width: 100%;
 }
 
-#contact-link > a {
+#contact-link>a {
     color: white;
 }
 
-#contact-link > a:hover {
+#contact-link>a:hover {
     color: var(--black);
 }
 
@@ -369,7 +367,7 @@ footer {
     justify-content: center;
 }
 
-#contact-wrapper > div {
+#contact-wrapper>div {
     width: 100%;
     display: flex;
     align-items: center;
@@ -400,7 +398,7 @@ textarea {
     height: 100%;
 }
 
-footer > span {
+footer>span {
     display: block;
     color: white;
     margin: auto;
@@ -410,7 +408,7 @@ footer > span {
     text-align: center;
 }
 
-.button > i {
+.button>i {
     margin-left: 10px;
 }
 
@@ -438,4 +436,26 @@ footer > span {
 #disqus_thread {
     margin-top: 50px;
     box-sizing: border-box;
+}
+
+.section-intro {
+    padding: 30px;
+    background-color: white;
+    padding-top: 60px;
+}
+
+.section-intro-dark {
+    background-color: var(--dark_blue);
+    color: white;
+    padding: 30px;
+    padding-top: 60px;
+}
+
+.section-intro-dark>h1, .section-intro-dark .button{
+    color: white;
+}
+
+.section-intro-dark > *, .section-intro > * {
+    max-width: 750px;
+    margin: auto;
 }

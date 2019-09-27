@@ -18,7 +18,7 @@ for ($i=1; $i < sizeof($parse1); $i++) {
 }
 ?>
 
-<section id="intro">
+<section class="section-intro-dark">
     <h1>Sketches</h1>
     <p>Cette page regroupe mes expériences créatives. Ce sont des animations, faites en Javascript, avec la librairie p5.
     Pour plus d'informations techniques, ou pour accéder au code source : <a href="https://github.com/t0mm4rx/sketches" target="_blank" class="button">Repo Github</a></p>
