@@ -16,6 +16,7 @@ for ($i=1; $i < sizeof($parse1); $i++) {
         "title" => $title
     ];
 }
+$sketches = array_reverse($sketches);
 ?>
 
 <section class="section-intro-dark">

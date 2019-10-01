@@ -53,7 +53,8 @@
 }
 
 #modal > .button-icon {
-    color: var(--black);
+    color: white;
+    mix-blend-mode: difference;
     background: none;
     border: none;
     position: fixed;
