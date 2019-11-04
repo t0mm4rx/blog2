@@ -1,6 +1,6 @@
 <section id="section-title">
 <h1>Tom Marx, développeur<br /><span id="completion-box">passionné</span></h1>
-<img id="profile-image" src="<?php echo $GLOBALS["url"]; ?>ressources/face.jpeg" alt="Tom Marx développeur passionné"/>
+<img id="profile-image" src="<?php echo $GLOBALS["url"]; ?>ressources/Tom Marx.jpg" alt="Tom Marx développeur informatique freelance"/>
 <canvas id="title-animation"></canvas>
 </section>
 

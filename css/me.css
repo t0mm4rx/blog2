@@ -30,14 +30,16 @@
 }
 
 #profile-image {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 100%;
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translate(-50%, 50%);
     border: 10px solid var(--black);
+    object-fit: cover;
+    object-position: 50% 0;
 }
 
 #completion-box {
