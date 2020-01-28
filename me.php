@@ -6,7 +6,7 @@
 
 <section id="section-bio">
     <div id="bio-text">
-        <p>Je suis né en 2001 à Lyon, où j'ai passé mon enfance. Je me suis très tôt intéressé aux nouvelles technologies et plus particulièrement à l'informatique. J'ai commencé en primaire, par de simples programmes en VB.net, pour ensuite découvrir l'HTML. Ma passion me suivit au collège et lycée, et j'appris des langages plus complexes, le PHP et le Java. Aujourd'hui, je réalise des sites internets, des applications mobiles, ou différents programmes. Je m'intéresse beaucoup au webdesign, et j'aime créer des interfaces, des logos ou encore des infographies.
+        <p>Je suis né à Lyon, où j'ai passé mon enfance. Je me suis très tôt intéressé aux nouvelles technologies et plus particulièrement à l'informatique. J'ai commencé en primaire, par de simples programmes en VB.net, pour ensuite découvrir l'HTML. Ma passion me suivit au collège et lycée, et j'appris des langages plus complexes, le PHP et le Java. Aujourd'hui, je réalise des sites internets, des applications mobiles, ou différents programmes. Je m'intéresse beaucoup au webdesign, et j'aime créer des interfaces, des logos ou encore des infographies.
         Je suis également passionné par les données et leur traitement, principalement avec le Machine Learning ou la visualisation.
         J'ai toujours beaucoup d'idées et j'essaye d'utiliser la programmation comme outil pour réaliser des choses créatives.
         Je fais également de la musique électro, et je pratique le basket depuis plus de 10 ans.
@@ -41,7 +41,7 @@
         <div class="card">
             <span><i class="fas fa-mobile"></i></span>
             <h3>Mobile</h3>
-            <p>Je sais développer des applications mobiles multi-plateformes avec le framework Ionic et Cordova. Je connais également le processus de déploiement sur les deux principaux stores d'applications. Je peux également développer des applications Android natives.</p>
+            <p>Je sais développer des applications mobiles multi-plateformes avec React Network, le framework Ionic et Cordova. Je connais également le processus de déploiement sur les deux principaux stores d'applications. Je peux également développer des applications Android natives.</p>
         </div>
         <div class="card">
             <span><i class="fas fa-pen-nib"></i></span>
