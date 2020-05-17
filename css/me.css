@@ -29,7 +29,14 @@
     z-index: -1;
 }
 
+#socials-header {
+  position: absolute;
+  right: var(--padding);
+  top: var(--padding);
+}
+
 #profile-image {
+    transition: filter .3s ease-in-out;
     width: 250px;
     height: 250px;
     border-radius: 100%;
@@ -40,6 +47,11 @@
     border: 10px solid var(--black);
     object-fit: cover;
     object-position: 50% 0;
+}
+
+#profile-image:hover {
+  filter: none;
+  -webkit-filter: grayscale(100%);
 }
 
 #completion-box {
@@ -55,7 +67,8 @@
     display: flex;
     align-items: center;
     padding-top: 10vh;
-    background-image: linear-gradient(0deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, var(--black) 0%, var(--dark_blue) 100%);
 }
 
 #section-bio #bio-text {
@@ -64,6 +77,8 @@
     font-size: .8em;
     box-sizing: border-box;
     font-weight: 200;
+    mix-blend-mode: difference;
+    color: white;
 }
 
 #bio-text > p {
@@ -162,6 +177,7 @@
 
 #section-experience {
     background-color: var(--dark_blue);
+    background-image: linear-gradient(180deg, var(--dark_blue) 0%, var(--black) 100%);
     padding-top: 50px;
     color: white;
 }

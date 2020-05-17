@@ -1,4 +1,14 @@
 <section id="section-title">
+<div id="socials-header">
+  <div>
+      <a href="https://github.com/t0mm4rx" target="_blank" class="button-icon"><i class="fab fa-github"></i></a>
+      <a href="https://twitter.com/AirM4rx" target="_blank" class="button-icon"><i class="fab fa-twitter"></i></a>
+      <a href="https://codepen.io/t0mm4rx/" target="_blank" class="button-icon"><i class="fab fa-codepen"></i></a>
+      <a href="https://www.malt.fr/profile/tommarx" target="_blank" class="button-icon"><image src="<?php echo $GLOBALS['url']; ?>ressources/malt.svg"
+        onmouseover="this.src='<?php echo $GLOBALS['url']; ?>ressources/malt-blue.svg'"
+        onmouseout="this.src='<?php echo $GLOBALS['url']; ?>ressources/malt.svg'"/></a>
+  </div>
+</div>
 <h1>Tom Marx, développeur<br /><span id="completion-box">passionné</span></h1>
 <img id="profile-image" src="<?php echo $GLOBALS["url"]; ?>ressources/Tom Marx.jpg" alt="Tom Marx développeur informatique freelance"/>
 <canvas id="title-animation"></canvas>
@@ -6,7 +16,7 @@
 
 <section id="section-bio">
     <div id="bio-text">
-        <p>Je suis né à Lyon, où j'ai passé mon enfance. Je me suis très tôt intéressé aux nouvelles technologies et plus particulièrement à l'informatique. J'ai commencé en primaire, par de simples programmes en VB.net, pour ensuite découvrir l'HTML. Ma passion me suivit au collège et lycée, et j'appris des langages plus complexes, le PHP et le Java. Aujourd'hui, je réalise des sites internets, des applications mobiles, ou différents programmes. Je m'intéresse beaucoup au webdesign, et j'aime créer des interfaces, des logos ou encore des infographies.
+        <p>Je suis né à Lyon, où j'ai passé mon enfance. Je me suis très tôt intéressé aux nouvelles technologies et plus particulièrement à l'informatique. J'ai commencé à l'école, par de simples programmes en VB.net, pour ensuite découvrir l'HTML. Ma passion me suivit au collège et lycée, et j'appris des langages plus complexes, le PHP et le Java. Aujourd'hui, je réalise des sites internets, des applications mobiles, ou différents programmes. Je m'intéresse beaucoup au webdesign, et j'aime créer des interfaces, des logos ou encore des infographies.
         Je suis également passionné par les données et leur traitement, principalement avec le Machine Learning ou la visualisation.
         J'ai toujours beaucoup d'idées et j'essaye d'utiliser la programmation comme outil pour réaliser des choses créatives.
         Je fais également de la musique électro, et je pratique le basket depuis plus de 10 ans.
@@ -36,12 +46,12 @@
         <div class="card">
             <span><i class="fas fa-robot"></i></span>
             <h3>Intelligence artificielle</h3>
-            <p>J'ai une vue d'ensemble de l'intelligence artificielle, et je peux résoudre des problèmes basiques en utilisant des méthodes de Machine Learning ou d'autres algorithmes. Je peux également analyser des ensembles de données en Python et les visualiser. Ce domaine me passionne et je me forme en continue.</p>
+            <p>J'ai une vue d'ensemble de l'intelligence artificielle, et je peux résoudre des problèmes en utilisant des méthodes de Machine Learning ou d'autres algorithmes. Je peux également analyser des ensembles de données en Python et les visualiser. Ce domaine me passionne et je me forme en continue.</p>
         </div>
         <div class="card">
             <span><i class="fas fa-mobile"></i></span>
             <h3>Mobile</h3>
-            <p>Je sais développer des applications mobiles multi-plateformes avec React Network, le framework Ionic et Cordova. Je connais également le processus de déploiement sur les deux principaux stores d'applications. Je peux également développer des applications Android natives.</p>
+            <p>Je sais développer des applications mobiles multi-plateformes avec React Native, le framework Ionic et Cordova. Je connais également le processus de déploiement sur les deux principaux stores d'applications. Je peux également développer des applications Android natives.</p>
         </div>
         <div class="card">
             <span><i class="fas fa-pen-nib"></i></span>

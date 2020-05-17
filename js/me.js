@@ -68,17 +68,17 @@ var commands = [
     "skill",
     "Web, PHP, Python, Machine Learning, Java, C, Ionic, Jeux vidéos, Unity, LibGDX, p5.js, MySQL, Linux, Photoshop, Sketch, Adobe XD",
     "ls * studies/",
-    "BAC mention bien<br />Diplôme MOOC AI Standford<br />*Student à 42 Paris<br />*MOOC deeplearning.ai<br /><br />*En cours"
+    "BAC mention bien<br />Diplôme MOOC AI Standford (2 mois)<br />*Student à 42 Paris<br />MOOC deeplearning.ai (4 mois)<br /><br />*En cours"
 
 ];
-const WAIT_AFTER_COMMAND = 5000;
+const WAIT_AFTER_COMMAND = 4000;
 var terminal_triggered = false;
 
 function animate_terminal(id)
 {
     setTimeout(function () {
         animate_command(id, 0);
-    }, 3000);
+    }, 1000);
 }
 
 function animate_command(id, index)
@@ -120,7 +120,7 @@ function typing_animation(el, text, callback)
 
 document.querySelector("#content").addEventListener('scroll', function(e) {
     let scroll = document.querySelector("#content").scrollTop;
-    if (document.querySelector("#terminal").getBoundingClientRect().top + 400 < window.innerHeight && !terminal_triggered)
+    if (document.querySelector("#terminal").getBoundingClientRect().top + 600 < window.innerHeight && !terminal_triggered)
     {
         terminal_triggered = true;
         animate_terminal("terminal");

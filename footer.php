@@ -7,7 +7,10 @@
             <a href="https://github.com/t0mm4rx" target="_blank" class="button-icon"><i class="fab fa-github"></i></a>
             <a href="https://twitter.com/AirM4rx" target="_blank" class="button-icon"><i class="fab fa-twitter"></i></a>
             <a href="https://codepen.io/t0mm4rx/" target="_blank" class="button-icon"><i class="fab fa-codepen"></i></a>
+            <a href="https://www.malt.fr/profile/tommarx" target="_blank" class="button-icon"><image src="<?php echo $GLOBALS['url']; ?>ressources/malt.svg"
+              onmouseover="this.src='<?php echo $GLOBALS['url']; ?>ressources/malt-blue.svg'"
+              onmouseout="this.src='<?php echo $GLOBALS['url']; ?>ressources/malt.svg'"/></a>
         </div>
     </div>
-    <span>Copyright Tom Marx - 2019</span>
+    <span>Copyright Tom Marx - 2020</span>
 </footer>

@@ -41,11 +41,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: white;
-    width: 800px;
-    height: 800px;
+    width: 500px;
+    height: 500px;
+    max-width: 100%;
     z-index: 100;
     box-shadow: 0 12px 22px rgba(0, 0, 0, 0.45), 0 10px 7px rgba(0, 0, 0, 0.33);
-    transition: top .6s ease;
+    transition: top .3s ease;
 }
 
 #modal.open {
@@ -57,7 +58,7 @@
     mix-blend-mode: difference;
     background: none;
     border: none;
-    position: fixed;
+    position: absolute;
     transform: translate(50%, -50%);
 }
 
