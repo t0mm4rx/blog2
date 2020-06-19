@@ -68,7 +68,7 @@ var commands = [
     "skill",
     "Web, PHP, Python, Machine Learning, Java, C, Ionic, Jeux vidéos, Unity, LibGDX, p5.js, MySQL, Linux, Photoshop, Sketch, Adobe XD",
     "ls * studies/",
-    "BAC mention bien<br />Diplôme MOOC AI Standford (2 mois)<br />*Student à 42 Paris<br />MOOC deeplearning.ai (4 mois)<br /><br />*En cours"
+    "BAC mention bien<br />MOOC AI Standford (2 mois)<br />*Student à 42 Paris<br />MOOC deeplearning.ai (4 mois)<br />MOOC Machine Learning for Trading (3 mois)<br /><br />*En cours"
 
 ];
 const WAIT_AFTER_COMMAND = 4000;

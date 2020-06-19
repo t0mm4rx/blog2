@@ -69,6 +69,15 @@ $descriptions["sketches"] = "Le code est un outil qui peut être mis au service 
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43435999-3"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-43435999-3');
+        </script>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" href="<?php echo $GLOBALS["url"]; ?>favicon.png" />

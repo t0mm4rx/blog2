@@ -65,6 +65,20 @@
     <div id="timeline">
 
         <div class="card">
+            <span>Mai<span>2020</span></span>
+            <div class="tags"><span>Études</span><span>Intelligence artificielle</span><span>Python</span><span>Trading</span></div>
+            <h3>Spécialisation "Machine Learning for Trading"</h3>
+            <p>Validation de la spécialisation de Google et du New York Institute of Finance sur Coursera. Cela représente 3 mois de cours. Cette spécialisation traite du machine learning pour réaliser des prédictions sur les marchés financiers.</p>
+        </div>
+
+        <div class="card">
+            <span>Avril<span>2020</span></span>
+            <div class="tags"><span>Études</span><span>Intelligence artificielle</span><span>Python</span></div>
+            <h3>Spécialisation Deep Learning</h3>
+            <p>Validation de la spécialisation de Deeplearning.io sur Coursera. Cela représente 4 mois de cours. Les cours sont à propos des réseaux de neurones profonds, de leur optimisation, de la gestion d'un projet de machine learning, et des réseaux à convolutions.</p>
+        </div>
+
+        <div class="card">
             <span>Juillet<span>2019</span></span>
             <div class="tags"><span>Études</span></div>
             <h3>Piscine et admission à l'école 42</h3>
