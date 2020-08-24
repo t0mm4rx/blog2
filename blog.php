@@ -111,7 +111,8 @@ class Blog
         new Post('EmojiNN', 'Tensorflow.js permet de créer, d\'entrainer, et d\'utiliser un modèle de réseau de neurones directement depuis le navigateur.', 'emojis', ['IA', 'Web'], '13/02/2019', 5),
         new Post('Contrôler un instrument de musique avec votre webcam', 'Apprenez à créer un instrument de musique contrôlable avec les mouvements de votre corps.', 'webcam-musique', ['Web'], '05/03/2019', 15),
         new Post('Calculez PI avec la méthode de Monte Carlo', 'Calculer la valeur de PI à partir de nombres aléatoires, d\'un carré, et d\'un cercle.', 'pi', ['Web'], '16/03/2019', 10),
-        new Post('Comment se préparer pour la piscine de 42 ?', 'Vous êtes inscrit à la piscine de 42 et vous souhaitez être prêt pour ce mois intense ? Je vous donne quelques conseils.', '42-piscine', ['42'], '31/07/2019', 10)
+        new Post('Comment se préparer pour la piscine de 42 ?', 'Vous êtes inscrit à la piscine de 42 et vous souhaitez être prêt pour ce mois intense ? Je vous donne quelques conseils.', '42-piscine', ['42'], '31/07/2019', 10),
+        new Post('Une IA qui comprend les visages', 'L\'IA peut apprendre grâce au machine learning, mais peut-elle comprendre ?', 'auto-encodeur-visages', ['IA', '42'], '20/08/2020', 20)
       ];
     }
 

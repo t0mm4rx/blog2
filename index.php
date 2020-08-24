@@ -9,7 +9,7 @@ $blog = new Blog();
 
 if ($_SERVER['SERVER_NAME'] == 'localhost')
 {
-    $GLOBALS["url"] = "http://localhost/blog2/";
+    $GLOBALS["url"] = "https://localhost/blog2/";
 }
 else if (strpos($_SERVER['SERVER_NAME'], '192.168.') !== false)
 {
