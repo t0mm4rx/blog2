@@ -9,7 +9,6 @@ const words = [
     "moteur",
     "concepteur",
     "rigoureux",
-    "fou?"
 ];
 var current = 0;
 

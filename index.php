@@ -50,11 +50,11 @@ else {
 }
 
 $titles = [];
-$titles["me"] = "Tom Marx, développeur IA, web, mobile freelance passionné";
-$titles["blog_home"] = "Blog de Tom Marx, développeur freelance";
+$titles["me"] = "Tom Marx, développeur freelance Data Science, web et mobile";
+$titles["blog_home"] = "Blog de Tom Marx, développeur freelance Data Science, web et mobile";
 if($page == "blog_article")
     $titles["blog_article"] = $blog->get_post_by_link($article)->get_title() . " - Tom Marx";
-$titles["contact"] = "Contacter Tom Marx";
+$titles["contact"] = "Contacter Tom Marx, développeur freelance";
 $titles["sketches"] = "Collection d'expériences graphiques numériques de Tom Marx";
 
 $descriptions = [];
