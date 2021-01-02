@@ -35,6 +35,10 @@
   top: var(--padding);
 }
 
+#socials-header .button-icon {
+	margin: 7px;
+}
+
 #profile-image {
     transition: filter .3s ease-in-out;
     width: 250px;
@@ -60,7 +64,7 @@
 }
 
 #completion-box:empty:before {
-  content: "\200b"; // unicode zero width space character
+  content: "\200b";
 }
 
 #section-bio {
